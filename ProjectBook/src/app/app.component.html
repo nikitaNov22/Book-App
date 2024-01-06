@@ -1,0 +1,54 @@
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <a class="navbar-brand text-white">Book App</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link text-white" routerLink="/">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" routerLink="/info-book">More info</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" routerLink="/summary">Summary</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+<div class="container">
+    <div class="row">
+        <div class="col-7"><router-outlet></router-outlet></div>
+        <div class="col-5 alert-dark imgDiv">
+            <div class="row">
+                <div class="col-6"><img
+                        src="https://cdn-lcjkn.nitrocdn.com/wnpVjxNtMzHiHjippdZplltRTdEUrswp/assets/images/optimized/rev-743f0ab/teachprivacy.com/wp-content/uploads/Orwell-1984-Book-Cover-48-Sweden.jpg"
+                        alt=""></div>
+                <div class="col-6"><img
+                        src="https://cdn-lcjkn.nitrocdn.com/wnpVjxNtMzHiHjippdZplltRTdEUrswp/assets/images/optimized/rev-743f0ab/teachprivacy.com/wp-content/uploads/Orwell-1984-Book-Cover-37.jpg"
+                        alt=""></div>
+            </div>
+            <div class="row">
+                <div class="col-6"><img
+                        src="https://cdn-lcjkn.nitrocdn.com/wnpVjxNtMzHiHjippdZplltRTdEUrswp/assets/images/optimized/rev-743f0ab/teachprivacy.com/wp-content/uploads/Orwell-1984-Book-Cover-40.jpg"
+                        alt=""></div>
+                <div class="col-6"><img
+                        src="https://cdn-lcjkn.nitrocdn.com/wnpVjxNtMzHiHjippdZplltRTdEUrswp/assets/images/optimized/rev-743f0ab/teachprivacy.com/wp-content/uploads/Orwell-1984-Book-Cover-29.jpg"
+                        alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<footer>
+    <nav class="navbar fixed-bottom navbar-light bg-dark justify-content-center">
+        <a class="text-white" href="#">&#169;book app</a>
+      </nav>
+</footer>

@@ -1,0 +1,35 @@
+<main>
+    <div class="container">
+        <div class="row">
+            <div class="col bg-light textDiv">
+                <h1>{{book.title}}</h1>
+
+                <div class="card mb-3 alert-secondary">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/George_Orwell_press_photo.jpg/800px-George_Orwell_press_photo.jpg"
+                                alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">{{book.author}}</h5>
+                                <p class="card-text">Eric Arthur Blair (25 June 1903 – 21 January 1950) was an English
+                                    novelist, essayist, journalist, and critic who wrote under the name George
+                                    Orwell. His work is characterised by lucid prose, social criticism, opposition to
+                                    totalitarianism, and support of democratic socialism.</p>
+                                <p class="card-text"><small class="text-muted">— "The best books are those that tell you
+                                        what you already know".</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="alert alert-secondary" role="alert">
+                    <span>Publication Date:</span> {{book.publication | date }};
+                </div>
+                <div class="alert alert-secondary" role="alert">
+                    <span>Description:</span> {{book.description}}
+                </div>
+            </div>
+        </div>
+    </div>
+</main>

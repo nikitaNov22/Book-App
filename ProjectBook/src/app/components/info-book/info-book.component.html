@@ -1,0 +1,37 @@
+<main>
+    <div class="container">
+        <div class="row">
+            <div class="col bg-light textDiv">
+                <h2>Info Book</h2>
+
+                <div class="alert alert-secondary" role="alert">
+                    <span>Title:</span> {{infoBook.title}};
+                </div>
+                <div class="alert alert-secondary" role="alert">
+                    <span>Author:</span> {{infoBook.author}};
+                </div>
+                <div class="alert alert-secondary" role="alert">
+                    <span>Country:</span> {{infoBook.country}};
+                </div>
+                <div class="alert alert-secondary" role="alert">
+                    <span>Language:</span> {{infoBook.language}};
+                </div>
+                <div class="alert alert-secondary" role="alert">
+                    <span>Genre:</span> {{infoBook.genre}};
+                </div>
+                <div class="alert alert-secondary" role="alert">
+                    <span>Pages:</span> {{infoBook.pages}};
+                </div>
+                <div class="alert alert-secondary" role="alert">
+                    <span>Publication:</span> {{infoBook.title}};
+                </div>
+
+                <div class="alert alert-secondary" role="alert" id="publisherAlert">
+                    <span>Publishers:</span><ul>
+                        <li *ngFor="let publisher of publishers">{{publisher.index}}. {{publisher.name}}</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
